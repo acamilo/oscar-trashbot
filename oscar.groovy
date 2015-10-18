@@ -14,9 +14,10 @@ def hide = {head.setHigh(false); arm.setHigh(false); mouth.setHigh(false);  claw
 def growl = {Runtime.getRuntime().exec("mpg123 /home/teacher/git/oscar-trashbot/growl.mp3"); }
 
 
-growl()
-sleep(1000);
+
 popup()
+sleep(2000);
+growl()
 
 sleep(5000)
 hide()

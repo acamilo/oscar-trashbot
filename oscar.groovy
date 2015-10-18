@@ -15,7 +15,7 @@ def growl = {print "growl\n "; Runtime.getRuntime().exec("mpg123 /home/teacher/g
 
 
 growl()
-sleep(400);
+sleep(600);
 popup()
  
 sleep(5000)

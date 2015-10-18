@@ -9,9 +9,9 @@ DigitalOutputChannel mouth  = new DigitalOutputChannel(dyio.getChannel(22)); // 
 DigitalOutputChannel head = new DigitalOutputChannel(dyio.getChannel(21)); // head
 DigitalOutputChannel claw   = new DigitalOutputChannel(dyio.getChannel(20)); // claw
 
-def popup = {head.setHigh(true); arm.setHigh(true);}
-def hide = {head.setHigh(false); arm.setHigh(false); mouth.setHigh(false);  claw.setHigh(false);}
-def growl = {Runtime.getRuntime().exec("mpg123 /home/teacher/git/oscar-trashbot/growl.mp3"); }
+def popup = {print "pop"; head.setHigh(true); arm.setHigh(true);}
+def hide = {print "hide"; head.setHigh(false); arm.setHigh(false); mouth.setHigh(false);  claw.setHigh(false);}
+def growl = {print "growl"; Runtime.getRuntime().exec("mpg123 /home/teacher/git/oscar-trashbot/growl.mp3"); }
 
 
 

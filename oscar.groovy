@@ -1,6 +1,6 @@
 
 ServoChannel luremouth = new ServoChannel (dyio.getChannel(1));
-ServoChannel lureeyes = new ServoChannel (dyio.getChannel(1));
+ServoChannel lureeyes = new ServoChannel (dyio.getChannel(2));
 
 DigitalOutputChannel arm  = new DigitalOutputChannel(dyio.getChannel(23)); // arm
 DigitalOutputChannel mouth  = new DigitalOutputChannel(dyio.getChannel(22)); // mouth
@@ -44,7 +44,12 @@ def grab = {
 }
 
 
-sleep(10000)
+def lure = {
+    luremouth.
+    
+}
+
+
 growl()
 sleep(600);
 popup()

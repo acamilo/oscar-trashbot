@@ -43,10 +43,10 @@ def grab = {
 }
 
 
-
-//growl()
-//sleep(600);
-//popup()
- 
+sleep(10000)
+growl()
+sleep(600);
+popup()
+sleep(1000);
 grab();
 hide();

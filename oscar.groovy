@@ -16,8 +16,9 @@ def popup = {
 
 def hide = {
     print "hide";
-    head.setHigh(false);
     arm.setHigh(false);
+    sleep(800)
+    head.setHigh(false);
     mouth.setHigh(false);
     claw.setHigh(false);
     print " done \n ";

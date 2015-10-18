@@ -29,6 +29,15 @@ def growl = {
     print " done \n ";
 }
 
+def grab = {
+    boolean clawstate = true;
+    for (i=0; i<10; i++) {
+        claw.setHigh(clawstate);
+        mouth.setHigh(clawstate);
+        sleep(500);
+        claw = ~claw;
+    }
+}
 
 
 

@@ -18,5 +18,5 @@ growl()
 sleep(600);
 popup()
  
-sleep(5000)
+sleep(6000)
 hide()

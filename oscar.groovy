@@ -6,6 +6,7 @@ DigitalOutputChannel arm  = new DigitalOutputChannel(dyio.getChannel(23)); // ar
 DigitalOutputChannel mouth  = new DigitalOutputChannel(dyio.getChannel(22)); // mouth
 DigitalOutputChannel head = new DigitalOutputChannel(dyio.getChannel(21)); // head
 DigitalOutputChannel claw   = new DigitalOutputChannel(dyio.getChannel(20)); // claw
+Random random = new Random()
 
 def popup = {
     print "pop"; 
@@ -45,11 +46,13 @@ def grab = {
 
 
 def lure = {
-    luremouth.
-    
+    int pos = random.nextInt(255);
+    print "Lure now at "+pos+"\n";
+    luremouth.SetPosition(,5000);
+    sleep(5000);
 }
 
-
+for (i=0; i<10; i++) {lure() }
 growl()
 sleep(600);
 popup()

@@ -35,7 +35,7 @@ def grab = {
         claw.setHigh(clawstate);
         mouth.setHigh(clawstate);
         sleep(500);
-        claw = ~claw;
+        claw = !claw;
     }
 }
 

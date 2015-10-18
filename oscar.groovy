@@ -16,7 +16,7 @@ def growl = {Runtime.getRuntime().exec("mpg123 /home/teacher/git/oscar-trashbot/
 
 
 popup()
-sleep(2000);
+sleep(1000);
 growl()
 
 sleep(5000)

@@ -8,14 +8,14 @@ DigitalOutputChannel head = new DigitalOutputChannel(dyio.getChannel(21)); // he
 DigitalOutputChannel claw   = new DigitalOutputChannel(dyio.getChannel(20)); // claw
 
 def popup = {
-    print "pop\n "; 
+    print "pop"; 
     head.setHigh(true); 
     arm.setHigh(true); 
     print " done \n ";
 }
 
 def hide = {
-    print "hide\n ";
+    print "hide";
     head.setHigh(false);
     arm.setHigh(false);
     mouth.setHigh(false);

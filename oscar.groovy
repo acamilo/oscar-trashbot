@@ -11,7 +11,7 @@ DigitalOutputChannel claw   = new DigitalOutputChannel(dyio.getChannel(20)); // 
 
 def popup = {head.setHigh(true); arm.setHigh(true);}
 def hide = {head.setHigh(false); arm.setHigh(false); mouth.setHigh(false); }
-def growl = {mouth.setHigh(true); Runtime.getRuntime().exec("mpg123 /home/teacher/git/7dd828fa3e945ade2bf3/growl.mp3");}
+def growl = {mouth.setHigh(true); Runtime.getRuntime().exec("mpg123 /home/teacher/git/oscar-trashbot/growl.mp3");}
 
 sleep(1000)
 popup()

@@ -48,7 +48,7 @@ def grab = {
 def lure = {
     int pos = random.nextInt(255);
     print "Lure now at "+pos+"\n";
-    luremouth.SetPosition(,5000);
+    luremouth.SetPosition(pos,5000);
     sleep(5000);
 }
 

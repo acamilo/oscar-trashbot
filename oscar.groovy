@@ -1,4 +1,4 @@
-
+dyio.setServoPowerSafeMode(false);
 ServoChannel luremouth = new ServoChannel (dyio.getChannel(2));
 ServoChannel lureeyes = new ServoChannel (dyio.getChannel(1));
 

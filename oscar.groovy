@@ -51,7 +51,7 @@ def lure = {
     luremouth.SetPosition(pos,5000);
     sleep(5000);
 }
-
+int i;
 for (i=0, i<100; i++) {lure() }
 growl()
 sleep(600);

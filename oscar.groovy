@@ -52,7 +52,7 @@ def lure = {
     sleep(5000);
 }
 
-for (i=0; i<10; i++) {lure() }
+while(true) {lure() }
 growl()
 sleep(600);
 popup()
